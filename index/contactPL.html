@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" name="IE-Edge">
+    <link rel="stylesheet" href="../styles/contactStyle.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/logo/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="../scripts/WOW.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script defer src="../scripts/verify.js"></script>
+    <script defer src="https://kit.fontawesome.com/3b7e5acd5e.js" crossorigin="anonymous"></script>
+    <title>Contact Us!</title>
+    <style>
+        .header__language__switcher {
+            background-color: var(--orange);
+            height: 4vmin;
+            width: 8vmin;
+            border-radius: 50px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .header__language__switcher:hover > .header__language__switcher__block {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../img/others/640px-Flag_of_Great_Britain_\(1707–1800\).svg.png);
+            border-radius: 50%;
+            outline: 2px solid var(--white);
+        }
+
+        .header__language__switcher::before {
+            content: 'EN';
+            position: absolute;
+            left: -50%;
+            top: 10%;
+            color: var(--white);
+        }
+
+        .header__language__switcher::after {
+            content: 'PL';
+            position: absolute;
+            right: -50%;
+            top: 10%;
+            color: var(--white);
+        }
+
+        .header__language__switcher__block {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: 50%;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../img/others/Flag_of_Poland.svg.png);
+            border-radius: 50%;
+            outline: 2px solid var(--white);
+            transition: 0.5s;
+        }
+
+        .description__block{
+            white-space: pre-line;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="header__intro" id="intro">
+        <div class="wrapper">
+            <div class="header__block">
+                <div class="header__logo">
+                    <img class="animate__animated animate__fadeInLeft" src="../img/logo/logo.png" alt="" title="Ecommerce">
+                </div>
+                <nav class="header__nav animate__animated animate__backInDown">
+                    <ul>
+                        <li><a href="../html/indexPL.html">główna</a></li>
+                        <li><a href="../html/productsPL.html">oferty</a></li>
+                        <li><a href="../html/aboutUsPL.html">o nas</a></li>
+                        <li><a href="#">kontakt</a></li>
+                        <li><a href="../html/blogPL.html">blog</a></li>
+                    </ul>
+                </nav>
+                <div class="header__language__switcher animate__animated animate__fadeIn">
+                    <a class="header__language__switcher__block" href="../html/contact.html"></a>
+                </div>
+                <label for="header__id" class="header__burger__menu animate__animated animate__fadeInRight">
+                    <input type="checkbox" id="header__id">
+                    <div class="burger__block">
+                        <div class="burger__block__item one"></div>
+                        <div class="burger__block__item two"></div>
+                        <div class="burger__block__item three"></div>
+                        <div class="burger__block__item four"></div>
+                    </div>
+                    
+                    <nav class="header__nav__burger">
+                        <ul>
+                            <li><a href="../html/indexPL.html">główna</a></li>
+                            <li><a href="../html/productsPL.html">oferty</a></li>
+                            <li><a href="../html/aboutUsPL.html">o nas</a></li>
+                            <li><a href="#">kontakt</a></li>
+                            <li><a href="../html/blogPL.html">blog</a></li>
+                        </ul>
+                        <div class="header__cart__burger__menu">
+                            <a href="../html/cart.html">
+                                <img src="../img/others/cart.png" alt="" title="Your purchases">
+                            </a>
+                        </div>
+                    </nav>
+                </label>
+                <div class="header__cart animate__animated animate__fadeInRight">
+                    <a href="../html/cartPL.html">
+                        <img src="../img/others/cart.png" alt="" title="Twoje zakupy">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="intro__block animate__animated animate__backInRight">
+                <div class="intro__item">
+                    <h2>Skontaktuj się z nami!</h2>
+                    <p>Ale wyniki masowych fanów, którzy otrzymują to, co sos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <form class="contact__form wow animate__animated animate__fadeIn" action="#" method="get">
+            <h2>Napisz swego lista</h2>
+            <input type="text" id="name" placeholder="Twoje imię" required>
+            <input type="text" id="name" placeholder="Nazwisko" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea contenteditable="true" spellcheck="true" id="text" placeholder="Napisz swoją wiadomość tutaj" maxlength="1000" required></textarea>
+            <span class="text__count"></span>
+            <label for="agreement">
+                <input type="checkbox" id="agreement" required>
+                <b>Wyrażam</b> zgodę na przetrwanie moich <a href="#" class="agreement__details" style="color:var(--orange)">danych osobowych.</a>.
+            </label>
+            <button class="btn__general btn__contact" type="submit">Wyślij Wiadomość</button>
+        </form>
+    </section>
+    <section class="map">
+        <div class="wrapper">
+            <div class="map__ahead">
+                <h2>Nasza lokalizacja</h2>
+            </div>
+        </div>
+        <iframe class="wow animate__animated animate__fadeInUp" id="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.7524105497614!2d17.01637557613812!3d51.094576640778065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc26aef60d0eb%3A0x46286462cb3383eb!2sSky%20Tower!5e0!3m2!1spl!2spl!4v1718032454032!5m2!1spl!2spl" width="100%" height="560" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="footer">
+        <div class="wrapper">
+            <div class="footer__block">
+                <div class="footer__block__adress">
+                    <h2>Ecommerce<img src="../img/logo/logo.png" alt=""></h2>
+                    <address>Powstańców Śląskich 95,
+                        53-332
+                        Wrocław, Polska</address>
+                    <a href="#">www.ecommerce.com.pl</a>
+                </div>
+                <nav class="footer__block__nav">
+                    <ul>
+                        <li><a href="#">Koszyk</a></li>
+                        <li><a href="../html/indexPL.html">Główna</a></li>
+                        <li><a href="#offers">Oferty</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__block__socialNet">
+                    <ul>
+                        <li title="Look Out Our Stories"><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                        </li>
+                        <li title="Follow Us On X"><a href="#"><i class="fa-brands fa-x-twitter"></i>X(Twitter)</a></li>
+                        <li title="Follow Us On Facebook"><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__block__logo">
+                    <img src="../img/logo/logo.png" alt="">
+                    <p>Heymall &copy; All Rights Reserved</p>
+                    <p>2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

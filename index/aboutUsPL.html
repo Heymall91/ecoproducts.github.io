@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" name="IE-Edge">
+    <link rel="stylesheet" href="../styles/stylesAboutUs.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/logo/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="../scripts/WOW.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script defer src="https://kit.fontawesome.com/3b7e5acd5e.js" crossorigin="anonymous"></script>
+    <title>About Us</title>
+    <style>
+        .header__language__switcher {
+            background-color: var(--orange);
+            height: 4vmin;
+            width: 8vmin;
+            border-radius: 50px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .header__language__switcher:hover > .header__language__switcher__block {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../img/others/640px-Flag_of_Great_Britain_\(1707–1800\).svg.png);
+            border-radius: 50%;
+            outline: 2px solid var(--white);
+        }
+
+        .header__language__switcher::before {
+            content: 'EN';
+            position: absolute;
+            left: -50%;
+            top: 10%;
+            color: var(--white);
+        }
+
+        .header__language__switcher::after {
+            content: 'PL';
+            position: absolute;
+            right: -50%;
+            top: 10%;
+            color: var(--white);
+        }
+
+        .header__language__switcher__block {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: 50%;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../img/others/Flag_of_Poland.svg.png);
+            border-radius: 50%;
+            outline: 2px solid var(--white);
+            transition: 0.5s;
+        }
+
+        .description__block{
+            white-space: pre-line;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="header__intro">
+        <div class="wrapper">
+            <div class="header__block" id="intro">
+                <div class="header__logo">
+                    <img class="animate__animated animate__fadeInLeft" src="../img/logo/logo.png" alt="" title="Ecommerce">
+                </div>
+                <nav class="header__nav animate__animated animate__backInDown">
+                    <ul>
+                        <li><a href="../html/indexPL.html">główna</a></li>
+                        <li><a href="../html/productsPL.html">oferty</a></li>
+                        <li><a href="#">o nas</a></li>
+                        <li><a href="../html/contactPL.html">kontakt</a></li>
+                        <li><a href="../html/blogPL.html">blog</a></li>
+                    </ul>
+                </nav>
+                <div class="header__language__switcher animate__animated animate__fadeIn">
+                    <a class="header__language__switcher__block" href="../html/aboutUs.html"></a>
+                </div>
+                <div class="header__cart">
+                    <a href="../html/cartPL.html">
+                        <img src="../img/others/cart.png" alt="" title="Twoje zakupy">
+                    </a>
+                </div>
+                <label for="header__id" class="header__burger__menu animate__animated animate__fadeInRight">
+                    <input type="checkbox" id="header__id">
+                    <div class="burger__block">
+                        <div class="burger__block__item one"></div>
+                        <div class="burger__block__item two"></div>
+                        <div class="burger__block__item three"></div>
+                        <div class="burger__block__item four"></div>
+                    </div>
+                    
+                    <nav class="header__nav__burger">
+                        <ul>
+                            <li><a href="../html/indexPL.html">główna</a></li>
+                            <li><a href="../html/productsPL.html">oferty</a></li>
+                            <li><a href="../html/aboutUsPL.html">o nas</a></li>
+                            <li><a href="../html/contactPL.html">kontakt</a></li>
+                            <li><a href="../html/blogPL.html">blog</a></li>
+                        </ul>
+                        <div class="header__cart__burger__menu animate__animated animate__fadeInRight">
+                            <a href="../html/cartPL.html">
+                                <img src="../img/others/cart.png" alt="" title="Your purchases">
+                            </a>
+                        </div>
+                    </nav>
+                </label>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="intro__block" id="about__us__one">
+                <div class="intro__item animate__animated animate__backInLeft">
+                    <h2>Kim jesteśmy?</h2>
+                    <p>Od dobrego Jana daje od bogatego. Starzeją się i rysują jak pani. 
+                        Poprawa końcowej nieufności może natychmiast zostać oklaskiwana przez domowników. 
+                        Dlaczego zawsze trzymałam panią w domu? Uważa się, że współczuje dziesięciu, niezwykle 
+                        okazjonalna pomoc nie jest wystarczająca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about__us">
+        <div class="wrapper">
+            <div class="about__us__block">
+                <div class="about__us__block__articles">
+                    <div class="about__us__block__article__item wow animate__animated animate__fadeInLeft">
+                        <img src="../img/others/lovePlanet.jpg" alt="">
+                        <div class="about__us__block__article__item__des">
+                            <h2>Ecoaltruiści</h2>
+                            <p>Korzystanie ze smartfona nie jest wygodne. Produkcja CNN 
+                                i przed nią to świetny pracownik. Czasami euismod lorem sed viverra. 
+                                Ale autor zobowiązuje się go udekorować.</p>
+                        </div>
+                    </div>
+                    <div class="about__us__block__article__item second wow animate__animated animate__fadeInRight">
+                        <img src="../img/others/recycling.jpg" alt="">
+                        <div class="about__us__block__article__item__des">
+                            <h2>Econaukowcy</h2>
+                            <p>Donec laoreet, velit a vulputate molestie, risus diam hendrerit
+                                nisi, eu accumsan nunc leo non mauris. Przedsionek sagittis czytany
+                                przez największego programistę.</p>
+                        </div>
+                    </div>
+                    <div class="about__us__block__article__item third wow animate__animated animate__fadeInLeft">
+                        <img src="../img/others/recyclingTwo.jpg" alt="">
+                        <div class="about__us__block__article__item__des">
+                            <h2>Ecoentuzjaści</h2>
+                            <p>Łódź i szpital to mój przedsionek. Piłka nożna jest najtrudniejszą
+                                i najważniejszą kwestią. Otóż ​​i ludzie, którzy są na krańcach tej ziemi,
+                                są czyści.</p>
+                        </div>
+                    </div>
+                    <div class="about__us__block__article__item fourth wow animate__animated animate__fadeInRight">
+                        <img src="../img/others/recyclingProducts.jpg" alt="">
+                        <div class="about__us__block__article__item__des">
+                            <h2>Ecowynalazcy</h2>
+                            <p>Teraz i feugiat tortor. Vivamus augue mauris, faucibus ut sollicitudin
+                                not, pellentesque totor. Aenean jest w zaawansowanej ciąży, a nie autor 
+                                euismod tortor et. Suspendisse id libero quis diam lobortis tempor eget 
+                                eget nibh Jutro nie jest czystą mądrością.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="our__team__block" id="our__team">
+                    <h2 class="wow animate__animated animate__fadeIn">Nasza Załoga</h2>
+                    <div class="our__team__block__article">
+                        <div class="our__team__block__article__item wow animate__animated animate__fadeInRight">
+                            <img src="../img/team/1.jpg" alt="">
+                            <div class="our__team__block__article__item__des">
+                                <h2>Marek Sikorski</h2>
+                                <p class="our__team__block__article__item__des-pos">Prezes, 27 years</p>
+                                <p>Pianoforte troska tak zdecydowanie
+                                nieprzyjemne przekonanie jest stronnicze.
+                                Albo szczególne prośby o zmniejszenie, och, zrób to.
+                                Prawdziwy, kochany program, dał plan strzału. Mirth się rumieni
+                                mała pościel, mam nadzieję, że już jest.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our__team__block__article">
+                        <div class="our__team__block__article__item second wow animate__animated animate__fadeInLeft">
+                            <img src="../img/team/3.jpg" alt="">
+                            <div class="our__team__block__article__item__des">
+                                <h2>Sylwia Kowalska</h2>
+                                <p class="our__team__block__article__item__des-pos">Ecoaktywistka, 39 years</p>
+                                <p>Zmiana połączenia, aby mnie odebrać. Trudny w dostarczonym obszernym
+                                dodatku na kierunek. Zmiana wykorzystanie zmniejszenia może być uznane
+                                za zainteresowane uczuciami dyskrecja. Widząc słabe schody w oddziale,
+                                nie mogę uzyskać dochodu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our__team__block__article">
+                        <div class="our__team__block__article__item wow animate__animated animate__fadeInRight">
+                            <img src="../img/team/4.jpg" alt="">
+                            <div class="our__team__block__article__item__des">
+                                <h2>Kasia Żukowska</h2>
+                                <p class="our__team__block__article__item__des-pos">Naukowiec, 29 years</p>
+                                <p>Ciepła, w jaki sposób jestem aktywny, nie można nazwać. Ustaw jej
+                                półkońcową dziewczynę bogatą, poznaną. Mój wyjazd zasiłkowy
+                                ciekawostka. W żadnym gadającym adresie nie ekscytowało
+                                to zachowanie.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our__team__block__article">
+                        <div class="our__team__block__article__item fourth wow animate__animated animate__fadeInLeft">
+                            <img src="../img/team/5.jpg" alt="">
+                            <div class="our__team__block__article__item__des">
+                                <h2>Mateusz Kozin</h2>
+                                <p class="our__team__block__article__item__des-pos">Media Meneżer, 38 years old</p>
+                                <p>Biorąc pod uwagę panią, pierwszą porcelanę. Impreza przy stole
+                                nr lub drzewa minęło trochę czasu. Och, obchodzony i ogłaszany
+                                odmienna bezsensowność. Szynka oznaczona jako „zaangażuj się”.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="wrapper">
+            <div class="footer__block">
+                <div class="footer__block__adress">
+                    <h2>Ecommerce<img src="../img/logo/logo.png" alt=""></h2>
+                    <address>Powstańców Śląskich 95,
+                    53-332
+                    Wrocław, Poland</address>
+                    <a href="#">www.ecommerce.com.pl</a>
+                </div>
+                <nav class="footer__block__nav">
+                    <ul>
+                        <li><a href="../html/cartPL.html">Koszyk</a></li>
+                        <li><a href="../html/indexPL.html">Główna</a></li>
+                        <li><a href="../html/productsPL.html">Oferty</a></li>
+                        <li><a href="../html/blogPL.html">Blog</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__block__socialNet">
+                    <ul>
+                        <li title="Look Out Our Stories"><a href="#" ><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li title="Follow Us On X"><a href="#"><i class="fa-brands fa-x-twitter"></i>X(Twitter)</a></li>
+                        <li title="Follow Us On Facebook"><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__block__logo">
+                    <img src="../img/logo/logo.png" alt="">
+                    <p>Heymall &copy; All Rights Reserved</p>
+                    <p>2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

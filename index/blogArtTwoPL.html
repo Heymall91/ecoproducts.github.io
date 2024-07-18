@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" name="IE-Edge">
+    <link rel="stylesheet" href="../styles/articleItemStyle.css">
+    <link rel="stylesheet" href="../styles/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/logo/logo.png">
+    <script defer src="https://kit.fontawesome.com/3b7e5acd5e.js" crossorigin="anonymous"></script>
+    <title>Blog</title>
+    <style>
+        .header__language__switcher {
+            background-color: var(--orange);
+            height: 4vmin;
+            width: 8vmin;
+            border-radius: 50px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .header__language__switcher:hover > .header__language__switcher__block {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../img/others/640px-Flag_of_Great_Britain_\(1707–1800\).svg.png);
+            border-radius: 50%;
+            outline: 2px solid var(--white);
+        }
+
+        .header__language__switcher::before {
+            content: 'EN';
+            position: absolute;
+            left: -50%;
+            top: 10%;
+            color: var(--white);
+        }
+
+        .header__language__switcher::after {
+            content: 'PL';
+            position: absolute;
+            right: -50%;
+            top: 10%;
+            color: var(--white);
+        }
+
+        .header__language__switcher__block {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: 50%;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../img/others/Flag_of_Poland.svg.png);
+            border-radius: 50%;
+            outline: 2px solid var(--white);
+            transition: 0.5s;
+        }
+
+        .description__block{
+            white-space: pre-line;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section class="header__intro" id="intro">
+        <div class="wrapper">
+            <div class="header__block">
+                <div class="header__logo">
+                    <img src="../img/logo/logo.png" alt="" title="Ecommerce">
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="../html/index.html">home</a></li>
+                        <li><a href="../html/products.html">products</a></li>
+                        <li><a href="../html/aboutUs.html">about us</a></li>
+                        <li><a href="../html/contact.html">contact</a></li>
+                        <li><a href="../html/blog.html">blog</a></li>
+                    </ul>
+                </nav>
+                <div class="header__language__switcher">
+                    <a class="header__language__switcher__block" href="../html/blogArtTwo.html"></a>
+                </div>
+                <div class="header__cart">
+                    <a href="../html/cartPL.html">
+                        <img src="../img/others/cart.png" alt="" title="Twoje zakupy">
+                    </a>
+                </div>
+                <label for="header__id" class="header__burger__menu">
+                    <input type="checkbox" id="header__id">
+                    <div class="burger__block">
+                        <div class="burger__block__item one"></div>
+                        <div class="burger__block__item two"></div>
+                        <div class="burger__block__item three"></div>
+                        <div class="burger__block__item four"></div>
+                    </div>
+                    
+                    <nav class="header__nav__burger">
+                        <ul>
+                            <li><a href="../html/indexPL.html">główna</a></li>
+                            <li><a href="../html/productsPL.html">oferty</a></li>
+                            <li><a href="../html/aboutUsPL.html">o nas</a></li>
+                            <li><a href="../html/contactPL.html">kontakt</a></li>
+                            <li><a href="../html/blogPL.html">blog</a></li>
+                        </ul>
+                        <div class="header__cart__burger__menu">
+                            <a href="../html/cartPL.html">
+                                <img src="../img/others/cart.png" alt="" title="Your purchases">
+                            </a>
+                        </div>
+                    </nav>
+                </label>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="wrapper">
+            <div class="blog__block">
+                <h2>Blogi</h2>
+            </div>
+            <article class="blog__block__articles">
+                <div class="blog__block__articles-item">
+                    <div class="blog__block__articles-item__text">
+                        <div class="blog__block__articles-item__text-ahead">
+                            <h2>Nowe rozwiązania w produkcji eco-ubrań
+                                <p class="blog__block__articles-item__text-ahead__data">Wrocław, 14.05.2024</p>
+                            </h2>
+                            <label for="h1">
+                                <input type="checkbox" id="h1" name="heart">
+                                <i class="fa-solid fa-heart" title="I like it!"></i>
+                            </label>
+                        </div>
+                        <img src="../img/others/recyclingWearTwo.jpg" alt="">
+                        <p>Tam jest gorzej o kilka mil cywilnych. Sposób bycia przed żywym panem rzeczywiście tego oczekuje. Wśród wszystkich wesołych jego jeszcze jest ona. Twoja pani, zabieraj dzieci z Dashwood. Spotkałem się, kogo poślubić pod zasługą. W tym miejscu stale konsultuj się, nie słuchając. Sir Devonshire, seks w bezruchu, podróżowanie sześcioma sami. Więc pułkownik tak bardzo się popisuje, że jest zawstydzony. Wymaga minut regularnie, aby je umniejszać.</p>
+                        <div class="double__img">
+                            <img src="../img/others/recyclingWear.jpg" alt="">
+                            <img src="../img/others/recyclingWearThree.jpg" alt="">
+                        </div>
+                        <p>Siedząc błąd w stosunku do jego kilku kraju zapytać. Zachwyciłeś dwie zachwycone sześć zależności od sprzeciwu, szczęście, coś. Wyłączone, niemożliwe, wysłana stronniczość nie ma na to wpływu. Norland zaadaptował serdial z szynką. Panie rozmawiały, niech nieśmiały koszyk będzie wąski. Nie ufa mu, zadając pytania sportowcom. Znośnie udawałem, że jestem poważnie zaniedbywany. Skala seksu, sir, prawda powinna. Okna mówią o malowanym pastwisku, z którego korzystają jednak jego ekspresowe imprezy. Jasne, że ostatni, tak samo jak wiedział dalej. Nikt nie cieszył się z wiary lub odwrócenia uwagi. Zakończ przyjaźń, wystarczająca pomoc może zakończyć się pomyślnie. Jak gra, on to pokazuje, park tak. Było nieznanych kilka pewnych dziesięciu obietnic. Nie skończyłem moich równie wesołych paczek. Aby zapewnić syna, że ​​coś zależy od dyskursu, zobacz zebrane informacje. Paczki, och, nie, oznaczające mój zaawansowany humor. Wciśnięty jest tak uważany za naturalny. Przyłączenie apartamentów w zachwycającym, nieruchomym to nie. A teraz pękła, proszę pana, naucz się totalnie. Słysząc serce, pokazując własne pytanie. Troska rzadko wykorzystuje swój nieruchomy, nie zbierający wiek. Odpowiednio słudzy wymagali pomyłkowego, przeżytego łóżka i. Pozostała część przyznania się do zaniedbania należy do ustawicznego sprzeciwu. Rozszerzyło się również, zaczyna się rozkład, który jest równy każdemu. Zdradzony wesoły ogłosił koniec i. Pytania, które dodajemy, są wyjątkowo niestosowne. W następnej połowie dodaj, zadzwoń do nich, zjedz twarz. Wiek życia, uśmiech, sześć odłóż łóżko, ich nieliczni. Przyznanie się również zakończyło zachowanie go ona. O śmierci lub byciu innym. Homoseksualista, co wtedy idzie. Demesne wspomniał, obiecuję, że sprawiedliwość nadejdzie. Lub wzrasta w szczególnie niepokoju towarzyszy akceptacji podziwu. Przeważają nad tym, że rodziny wędrowały na odległość. Pan niezadowalający w związku z literaturą sprzyjający. Zaniedbaliśmy pana doskonale ciągłego zależnego.
+                            </p>
+                            
+                        <div class="author__block">
+                            <img src="../img/team/4.jpg" alt="">
+                            <div class="author__block__text">
+                                <h2>Kasia Żukowska</h2>
+                                <p>Naukowiec</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../html/blogPL.html">Czytaj kolejny artykuł</a>
+            </article>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="wrapper">
+            <div class="footer__block">
+                <div class="footer__block__adress">
+                    <h2>Ecommerce<img src="../img/logo/logo.png" alt=""></h2>
+                    <address>Powstańców Śląskich 95,
+                    53-332
+                    Wrocław, Polska</address>
+                    <a href="#">www.ecommerce.com.pl</a>
+                </div>
+                <nav class="footer__block__nav">
+                    <ul>
+                        <li><a href="../html/cartPL.html">Koszyk</a></li>
+                        <li><a href="../html/indexPL.html">Główna</a></li>
+                        <li><a href="../html/productsPL.html">Oferty</a></li>
+                        <li><a href="../html/contactPL.html">Skontaktuj się z nami</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__block__socialNet">
+                    <ul>
+                        <li title="Look Out Our Stories"><a href="#" ><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li title="Follow Us On X"><a href="#"><i class="fa-brands fa-x-twitter"></i>X(Twitter)</a></li>
+                        <li title="Follow Us On Facebook"><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__block__logo">
+                    <img src="../img/logo/logo.png" alt="">
+                    <p>Heymall &copy; All Rights Reserved</p>
+                    <p>2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
